@@ -1,0 +1,70 @@
+body {
+    margin:0; font-family:'Poppins', sans-serif; color:white; overflow-x:hidden;
+}
+#forest-bg {
+    position:fixed; top:0; left:0; width:100%; height:100%;
+    background:#052d26;
+    background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format');
+    background-size:cover; background-position:center;
+    filter:brightness(0.4);
+    z-index:-1;
+}
+header {
+    display:flex; justify-content:space-between; padding:20px 30px;
+    position:fixed; width:100%; top:0; left:0; background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px); z-index:10;
+}
+.logo { font-weight:700; font-size:22px; letter-spacing:1px; }
+
+#hamburger { width:30px; cursor:pointer; display:flex; flex-direction:column; gap:5px; }
+#hamburger span { height:3px; background:white; border-radius:3px; transition:0.3s; }
+
+#menu-overlay {
+    position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(30,5,45,0.8); display:none;
+    backdrop-filter:blur(6px); z-index:20;
+}
+.menu-scroll {
+    width:80%; margin:100px auto; background:rgba(255,255,255,0.1);
+    padding:30px; border-radius:15px; text-align:center;
+}
+.menu-scroll a {
+    display:block; padding:15px; font-size:22px; color:#fff; text-decoration:none;
+    transition:0.3s;
+}
+.menu-scroll a:hover { color:#ff86ff; transform:scale(1.1); }
+
+#hero {
+    height:100vh; display:flex; justify-content:center; align-items:center;
+    text-align:center; padding:20px;
+}
+.hero-content h1 {
+    font-size:50px; font-weight:900; text-shadow:0 0 20px #c53bff;
+}
+.hero-content p { font-size:20px; margin-top:10px; }
+.cta {
+    margin-top:30px; padding:14px 40px; font-size:20px; font-weight:600;
+    border:none; border-radius:50px; cursor:pointer; background:#9d4edd;
+    box-shadow:0 0 15px #d87aff; transition:0.3s;
+}
+.cta:hover { transform:scale(1.1); box-shadow:0 0 25px #ffb3ff; }
+
+#info-bar {
+    background:#fff4e6; color:#432; padding:20px; text-align:center;
+    font-weight:600; margin:40px auto; width:80%; border-radius:15px;
+}
+
+#cards { display:flex; justify-content:center; gap:20px; padding:40px; flex-wrap:wrap; }
+.card {
+    width:280px; padding:30px; border-radius:20px; text-align:center; font-size:22px;
+    font-weight:700; cursor:pointer; transition:0.3s; color:white;
+}
+.card:hover { transform:translateY(-10px) scale(1.05); }
+
+.navy { background:#001f54; }
+.magenta { background:#6a014f; }
+.orange { background:#b34700; }
+
+footer {
+    text-align:center; padding:30px; background:rgba(0,0,0,0.6); margin-top:40px;
+}
